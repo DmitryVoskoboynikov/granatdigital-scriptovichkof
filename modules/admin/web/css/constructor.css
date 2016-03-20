@@ -1,0 +1,122 @@
+.js_scripts_edit_box {
+    position: fixed;
+    width: 100%;
+    top: 135px;
+}
+
+.top-settings {
+    position: fixed;
+    background-color: #F5F5F5;
+    border-bottom-color: #D5D5D5;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    top: 52px;
+    padding: 5px;
+    left: 0;
+    z-index: 2;
+    height: 80px;
+    padding-top: 50px;
+}
+
+.sales-mode {
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.js_scripts_list_box_wrap {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 8px;
+    z-index: 11;
+    width: 100%;
+}
+
+.dropdown_js_scripts_list_box {
+    display: inline-block;
+}
+
+.target {
+    width: 360px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.sales-mode a {
+    color: black;
+}
+
+.js_scripts_edit_box a {
+    margin-right: 15px;
+}
+
+.js_menu.active {
+    color: #FC5424;
+    text-decoration: none;
+}
+
+.sales-mode-step {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border: 1px solid;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.script-buttons {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: none;
+}
+
+.js_script_action_delete {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+
+body .js_settings_box {
+    padding-top: 133px;
+    display: none;
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #FFF;
+    border-left: 1px solid #DDD;
+}
+
+.js_edit {
+    padding: 3px 15px 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.js_edit {
+    position: relative;
+}
+
+.js_settings_box .form-horizontal .form-group {
+    margin: 0px;
+}
+
+.js_settings_box textarea {
+    width: 100%;
+    min-height: 70px;
+}
+
+
+
+

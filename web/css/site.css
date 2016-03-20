@@ -1,0 +1,583 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/**********************************************************************************************************************/
+.js_box {
+    padding-left: 10px;
+    padding-top: 135px;
+    position: absolute;
+    width: 95%;
+    height: 100%;
+}
+
+.js_list_box {
+    padding-top: 50px !important;
+    padding-left: 33px !important;
+}
+
+.script__item .panel {
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    border-color: #D5D5D5;
+}
+
+.script__item .panel:hover {
+    border-top-color: #FC5424;
+    background-color: #F9F9F9;
+    border-top-width: 4px;
+}
+
+.script__item .panel-header {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px dotted #D5D5D5;
+}
+
+.script__item h4 {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.script__item .panel:hover h4 {
+    margin-top: 7px;
+}
+
+.script__item-stats {
+    text-align: center;
+    margin: 0px auto;
+    width: 145px;
+}
+
+.script__item-stats * {
+    color: #777;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 960px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.js_scripts_edit_box {
+    position: fixed;
+    width: 100%;
+    top: 135px;
+}
+
+.top-settings {
+    position: fixed;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #D5D5D5;
+    top: 52px;
+    padding: 50px 5px 5px;
+    left: 0px;
+    z-index: 2;
+    height: 80px;
+}
+
+.sales-mode {
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.sales-infos {
+    display: none;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.sales-info {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.js_scripts_list_box_wrap {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 8px;
+    z-index: 11;
+    width: 100%;
+}
+
+.js_scripts_list_box {
+    display: inline-block;
+}
+
+body .js_settings_box {
+    padding-top: 133px;
+    display: none;
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: #FFF;
+    border-left: 1px solid #DDD;
+}
+
+body .js_constructor_box {
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 0px 300px 0px 10px;
+    margin-top: 135px;
+}
+
+.target {
+    width: 360px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.zoom-btns {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 9px;
+    z-index: 10;
+    width: 35px;
+}
+
+.js_view_box {
+    padding: 135px 0px 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.script-target {
+    display: none;
+    padding: 10px 0px 10px 15px;
+    font-size: 1.1em;
+    color: #808080;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 5px;
+    position: absolute;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 1;
+}
+
+.log {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.log .item {
+    position: relative;
+    margin: 40px;
+}
+
+.log .item {
+    font-size: 18px;
+    margin-right: 350px;
+}
+
+.log .counter {
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    font-size: 14px;
+    color: #808080;
+}
+
+button.set_state {
+    margin: 5px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 70px;
+    background: #F8F8F8 none repeat scroll 0% 0%;
+    border-top: 1px solid #CCC;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.progressBar .progressIndicator {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.progressBar .progressLineBack {
+    width: 200px;
+    height: 5px;
+    border-radius: 3px;
+    background: #BBB none repeat scroll 0% 0%;
+}
+
+.progressBar .progressLineFill {
+    width: 0px;
+    height: 5px;
+    border-radius: 3px;
+    background: #696 none repeat scroll 0% 0%;
+}
+
+.progressBar .talk_is_over {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+.js_starred_box {
+    display: none;
+    position: fixed;
+    width: 350px;
+    right: 0px;
+    top: 132px;
+    overflow-y: scroll;
+    background-color: #FFF;
+    padding: 0px 20px;
+    bottom: 70px;
+    z-index: 2;
+}
+
+.js_desk {
+    min-width: 800px;
+    min-heigth: 800px;
+    position: relative;
+}
+
+.step {
+    font-size: 16px;
+    font-family: Arial;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 6px;
+    background: #FFF none repeat scroll 0% 0%;
+    padding: 15px 25px 25px 15px;
+    opacity: 0.8;
+    cursor: move;
+}
+
+.step {
+    min-width: 95px;
+}
+
+.step .text {
+    min-width: 38px;
+    max-width: 250px;
+    min-height: 16px;
+}
+
+.step .link_start {
+    position: absolute;
+    right: 5px;
+    border-radius: 4px;
+    bottom: 37%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FC5424;
+    cursor: pointer;
+}
+
+.step .add_step {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background: #00BA5B url('glyphicons-halflings.png') no-repeat scroll -407.5px -95px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.no-text-error {
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    color: #FF5B5B;
+    font-size: 18px;
+}
+
+.step .starred {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    display: none;
+}
+
+.step .tasks {
+    position: absolute;
+    bottom: 0px;
+    right: 22px;
+    display: none;
+}
+
+.step .remove {
+    position: absolute;
+    left: 35px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background: #DDD url('glyphicons-halflings.png') no-repeat scroll -311px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.step .remove .remove_inner {
+    display: none;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    padding: 2px 4px 1px;
+    background: #F88 none repeat scroll 0% 0%;
+    border: 1px solid #A5B3C2;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 99%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.condition {
+    font-size: 14px;
+    font-family: Arial;
+    background: #FFF none repeat scroll 0% 0%;
+    opacity: 0.85;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.condition_remove {
+    position: relative;
+    left: 1px;
+    bottom: -1px;
+    width: 16px;
+    height: 16px;
+    background: #DDD url('glyphicons-halflings.png') no-repeat scroll -311px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.condition_remove .condition_remove_inner {
+    display: none;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    padding: 2px 4px 1px;
+    background: #F88 none repeat scroll 0% 0%;
+    border: 1px solid #A5B3C2;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 99%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.step .stat_info {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stat_unexpected_answer_color {
+    color: #00F;
+}
+
+.stat_ended_by_client_color {
+    color: #F00;
+}
+
+.stat_goal_achieved_color {
+    color: #008000;
+}
+
+.js_stats_box_wrap {
+    width: 300px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    padding-top: 133px;
+    background-color: #FFF;
+    border-left: 1px solid #DDD;
+    position: fixed;
+}
+
+.js_stats_box {
+    padding: 0px 15px 10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.center-block {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 80%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 10;
+}
+
+.js_access_form {
+    margin-top: 15px;
+}
+
+.js_access_form thead {
+    background: #F5F5F5 none repeat scroll 0%;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+.js_access_form table thead tr th .js_access_role,
+.js_access_form table thead tr th .js_add_access_user {
+    background: #F5F5F5 none repeat scroll 0% 0%;
+}
+
+.js_access_form table tbody ul li {
+    display: inline-block;
+    padding: 2px 4px 1px;
+    margin: 1px 1px 0px 0px;
+    background: #FFF none repeat scroll 0% 0%;
+    border: 1px solid #A5B3C2;
+    border-radius: 3px;
+    color: #4A6785;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 99%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: outside none none;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.js_access_form table tbody ul li.active {
+    background-color: #4A6785;
+    border-color: #4A6785;
+    color: #FFF;
+}

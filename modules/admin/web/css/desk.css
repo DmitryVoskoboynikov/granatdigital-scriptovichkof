@@ -1,0 +1,168 @@
+.js_box {
+    padding-left: 10px;
+    padding-top: 135px;
+    position: absolute;
+    width: 95%;
+    height: 100%;
+}
+
+body .js_constructor_box {
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 0 300px 0 10px;
+    top: 135px;
+    left: 0;
+    margin-top: 0px;
+}
+
+.zoom-btns {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 9px;
+    z-index: 10;
+    width: 35px;
+}
+
+.js_desk {
+    min-width: 800px;
+    min-height: 800px;
+    position: relative;
+}
+
+.step {
+    font-size: 16px;
+    font-family: Arial;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: white;
+    padding: 15px 25px 25px 15px;
+    opacity: 0.8;
+    cursor: move;
+}
+
+.step {
+    min-width: 95px;
+}
+
+.step .text {
+    min-width: 38px;
+    max-width: 250px;
+    min-height: 16px;
+}
+
+.step .link_start {
+    position: absolute;
+    right: 5px;
+    border-radius: 4px;
+    bottom: 37%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fc5424;
+    cursor: pointer;
+}
+
+.step .add_step {
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background: #00ba5b url('glyphicons-halflings.png') no-repeat scroll -407.5px -95px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.step .remove {
+    position: absolute;
+    left: 35px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background: #ddd url('glyphicons-halflings.png') no-repeat scroll -311px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.step .remove .remove_inner {
+    display: none;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    padding: 2px 4px 1px;
+    background: #f88 none repeat scroll 0% 0%;
+    border: 1px solid #a5b3c2;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 99%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.step .remove.act {
+    background-color: #f00;
+}
+
+.step .remove.act .remove_inner {
+    display: block;
+}
+
+.answer {
+    font-size: 14px;
+    font-family: Arial;
+    background: #fff none repeat scroll 0% 0%;
+    opacity: 0.85;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.answer_remove {
+    position: relative;
+    left: 1px;
+    bottom: -1px;
+    width: 16px;
+    height: 16px;
+    background: #ddd url("glyphicons-halflings.png") no-repeat scroll -311px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.answer_remove .answer_remove_inner {
+    display: none;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    padding: 2px 4px 1px;
+    background: #f88 none repeat scroll 0% 0%;
+    border: 1px solid #a5b3c2;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 99%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.answer_remove.act {
+    background-color: #f00;
+}
+
+.answer_remove.act .answer_remove_inner {
+    display: block;
+}
+
+.wrap > .container {
+    padding: 0px;
+}
